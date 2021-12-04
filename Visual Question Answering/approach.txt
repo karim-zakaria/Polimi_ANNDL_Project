@@ -1,0 +1,8 @@
+After doing some research regarding the best architectures used ofr problems of this nature I came to the conclusion that the most fitting
+architecture used is the relation network architecture which depends on dividing the cnn features of into smaller blocks and feeding each pair
+concatenated with the lstm encoded data. Therefore, I read the paper for this work and implemented the same architecture described. However, due to
+the architecture being extremely computationally extensive the due to the pair wise processing of the feature blocks I resorted to downsizing the
+input images to be able to run the training process locally. Which led to a drop in the model performance which on a similar dataset got a superhuman
+accuracy of 95% according to the paper published describing this archticture. Moreover, I would like to point out that no validation set was used for
+the training process after noticing that the model was largely underfitting the dataset due to the previously discussed therefore there was no need
+for the use of a validation set to monitor overfitting.
